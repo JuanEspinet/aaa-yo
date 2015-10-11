@@ -3,3 +3,45 @@ $icon-font-path: '../fonts/';
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+// Jumbotron background image assignment and overrides, may be redundant with variable changes later
+.jumbotron {
+  background-image: url("http://lorempixel.com/output/cats-q-c-1600-800-5.jpg");
+  background-size: cover;
+  overflow: hidden;
+  color: white;
+  h2, p {
+    margin-left: 15px;
+  }
+}
+
+// Available cats container
+.flexboxcustom {
+  display: flex;
+  flex-flow: row wrap;
+}
+.flexboxcenter {
+  justify-content: center;
+}
+
+// Available cat card template
+.card {
+  background-color: #f7f8fa;
+  border-bottom: 1px solid #d9d9d9;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  p, h4 {
+    margin-left: 15px;
+  }
+}
+
+.smallInput {
+  input, .form-control{
+  width: 50%;
+  }
+}
+
+.catDetailBasics {
+  background-color: #d9d9d9;
+}
