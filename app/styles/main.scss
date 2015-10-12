@@ -17,6 +17,7 @@ $card-margin: 1rem 1rem 1rem 0;
 $card-padding: 0px;
 $card-width: 100%;
 
+
 /*---------------------------------------*/
               
 .browserupgrade {
@@ -315,9 +316,11 @@ h3 {
     position:relative;
     border-bottom: 2px solid $primary-color;
     height:300px
+    p, h4 {
+    margin-left: 15px;
+  }    
 } 
-    
-                
+                   
 .image{
     height: $card-height;
     width: $card-width;    
@@ -358,4 +361,38 @@ textarea{
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+    
+
+// Jumbotron background image assignment and overrides, may be redundant with variable changes later
+.jumbotron {
+  background-image: url("http://lorempixel.com/output/cats-q-c-1600-800-5.jpg");
+  background-size: cover;
+  overflow: hidden;
+  color: white;
+  h2, p {
+    margin-left: 15px;
+  }
+}
+
+// Available cats container
+.flexboxcustom {
+  display: flex;
+  flex-flow: row wrap;
+}
+.flexboxcenter {
+  justify-content: center;
+}
+
+// Available cat card template
+
+
+.smallInput {
+  input, .form-control{
+  width: 50%;
+  }
+}
+
+.catDetailBasics {
+  background-color: #d9d9d9;
+
 }
